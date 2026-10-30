@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1e40af;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 15px;
+}
+
+main {
+    width: 90%;
+    max-width: 650px;
+    margin: 30px auto;
+}
+
+.calculator,
+.result-section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #1e40af;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    margin: 15px 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #1e40af;
+}
+
+#errorMessage {
+    color: #dc2626;
+    margin-top: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.result-section {
+    display: none;
+}
+
+.result-card {
+    background-color: #eff6ff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.result-card > p {
+    margin-bottom: 15px;
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 5px;
+    border-bottom: 1px solid #cbd5e1;
+}
+
+.result-item strong {
+    color: #1e40af;
+}
+
+.category-box {
+    text-align: center;
+    margin-top: 20px;
+    padding: 18px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.category-box h3 {
+    color: #15803d;
+    font-size: 23px;
+}
+
+.note {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #64748b;
+    text-align: center;
+}
+
+footer {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    font-size: 14px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    header p {
+        font-size: 13px;
+    }
+
+    main {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    .calculator,
+    .result-section {
+        padding: 18px;
+    }
+
+    .result-item {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}

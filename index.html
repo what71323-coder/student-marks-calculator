@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marks Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Student Marks Calculator</h1>
+        <p>Calculate your total marks, average and percentage easily.</p>
+    </header>
+
+    <main>
+        <section class="calculator">
+
+            <h2>Enter Student Details</h2>
+
+            <form id="marksForm">
+
+                <div class="form-group">
+                    <label for="studentName">Student Name</label>
+                    <input type="text" id="studentName"
+                        placeholder="Enter student name" required>
+                </div>
+
+                <h3>Enter Subject Marks</h3>
+
+                <div class="form-group">
+                    <label for="subject1">HTML</label>
+                    <input type="number" id="subject1"
+                        placeholder="Marks out of 100" min="0" max="100" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject2">CSS</label>
+                    <input type="number" id="subject2"
+                        placeholder="Marks out of 100" min="0" max="100" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject3">JavaScript</label>
+                    <input type="number" id="subject3"
+                        placeholder="Marks out of 100" min="0" max="100" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject4">PHP</label>
+                    <input type="number" id="subject4"
+                        placeholder="Marks out of 100" min="0" max="100" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject5">MySQL</label>
+                    <input type="number" id="subject5"
+                        placeholder="Marks out of 100" min="0" max="100" required>
+                </div>
+
+                <button type="submit">Calculate Result</button>
+
+            </form>
+
+            <p id="errorMessage"></p>
+
+        </section>
+
+        <section class="result-section" id="resultSection">
+
+            <h2>Student Result</h2>
+
+            <div class="result-card">
+                <p>Student Name: <strong id="resultName">-</strong></p>
+
+                <div class="result-item">
+                    <span>Total Marks</span>
+                    <strong id="totalMarks">0 / 500</strong>
+                </div>
+
+                <div class="result-item">
+                    <span>Average</span>
+                    <strong id="averageMarks">0</strong>
+                </div>
+
+                <div class="result-item">
+                    <span>Percentage</span>
+                    <strong id="percentage">0%</strong>
+                </div>
+
+                <div class="category-box">
+                    <span>Practice Category</span>
+                    <h3 id="category">-</h3>
+                </div>
+            </div>
+
+            <p class="note">
+                Note: These categories are for practice purposes only,
+                not official academic grades.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Student Marks Calculator | JavaScript Practice Project</p>
+    </footer>
+
+</body>
+</html>
